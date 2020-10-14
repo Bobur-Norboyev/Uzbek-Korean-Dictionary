@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="678.0" style="-fx-background-color: aquamarine;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uzbek.korean.dictionary.MadanController">
+   <children>
+      <Label alignment="CENTER" layoutX="119.0" layoutY="24.0" prefHeight="54.0" prefWidth="462.0" style="-fx-background-color: yellow; -fx-background-radius: 20;" text="Koreya  madaniyati  :">
+         <effect>
+            <DropShadow blurType="TWO_PASS_BOX" color="#e8f80a" height="71.41" radius="41.875" width="98.09" />
+         </effect>
+         <font>
+            <Font name="Franklin Gothic Demi Cond" size="26.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="text" editable="false" layoutX="48.0" layoutY="86.0" prefHeight="371.0" prefWidth="603.0" text="tyuijhg">
+         <effect>
+            <Lighting bumpInput="$null" specularConstant="1.0">
+               <light>
+                  <Light.Distant color="#f5eded" />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="Sitka Display Bold Italic" size="19.0" />
+         </font>
+      </TextArea>
+      <Button layoutX="294.0" layoutY="466.0" mnemonicParsing="false" onAction="#yop" prefHeight="37.0" prefWidth="111.0" style="-fx-background-color: blue; -fx-background-radius: 20;" text="OK">
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.79" color="#28e519" height="20.0" radius="9.5" width="20.0" />
+         </effect>
+         <font>
+            <Font name="Bodoni MT" size="19.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

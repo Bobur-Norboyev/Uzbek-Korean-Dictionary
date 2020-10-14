@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="203.0" prefWidth="428.0" style="-fx-background-color: aqua;" stylesheets="@stil.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uzbek.korean.dictionary.ChiqishOynaController">
+   <children>
+      <ImageView fx:id="rasm" fitHeight="64.0" fitWidth="64.0" layoutX="333.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url(suroq.png);">
+         <image>
+            <Image url="@suroq.png" />
+         </image></ImageView>
+      <Label alignment="CENTER" layoutX="73.0" layoutY="8.0" prefHeight="39.0" prefWidth="292.0" text="Dasturdan chiqish" textFill="#f03805">
+         <font>
+            <Font name="Bodoni MT" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="72.0" prefHeight="39.0" prefWidth="292.0" text="Rostdan dasturdan chiqmoqchimisiz ? " textFill="#5e0ee8">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="ha" layoutX="126.0" layoutY="139.0" mnemonicParsing="false" onAction="#chiq" prefHeight="17.0" prefWidth="55.0" style="-fx-background-color: blue;" text="Ha" textFill="#e6f20a">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="yuq" layoutX="241.0" layoutY="139.0" mnemonicParsing="false" onAction="#qayt" prefHeight="39.0" prefWidth="55.0" style="-fx-background-color: blue;" text="Yo'q" textFill="#c9ee0c">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

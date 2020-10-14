@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="320.0" prefWidth="532.0" style="-fx-background-color: aqua;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uzbek.korean.dictionary.AboutController">
+   <children>
+      <Label alignment="CENTER" layoutX="43.0" layoutY="14.0" prefHeight="39.0" prefWidth="442.0" text="O'zbekcha - Koreyscha lug'at" textFill="#000702">
+         <font>
+            <Font name="Candara" size="32.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="39.0" layoutY="53.0" prefHeight="27.0" prefWidth="247.0" text="Dastur nomi : O'zbekcha - Koreyscha lug'at" />
+      <Label layoutX="39.0" layoutY="74.0" prefHeight="27.0" prefWidth="196.0" text="Versiyasi : 1.0.1" />
+      <ImageView fitHeight="80.0" fitWidth="180.0" layoutX="39.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@uzb.png" />
+         </image></ImageView>
+      <TextArea fx:id="info" editable="false" layoutX="243.0" layoutY="80.0" prefHeight="196.0" prefWidth="281.0">
+         <font>
+            <Font name="Bodoni MT" size="12.0" />
+         </font></TextArea>
+      <Hyperlink layoutX="43.0" layoutY="281.0" prefHeight="23.0" prefWidth="158.0" text="Dasturchi bilan aloqa" textFill="#ee070e">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Hyperlink>
+      <Button cancelButton="true" layoutX="243.0" layoutY="282.0" mnemonicParsing="false" onAction="#orqaga" prefHeight="25.0" prefWidth="281.0" style="-fx-background-color: magenta;" text="OK" />
+      <Text layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dastur haqida" wrappingWidth="104.13671875" />
+      <ImageView fitHeight="80.0" fitWidth="180.0" layoutX="39.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@kor.png" />
+         </image></ImageView>
+   </children>
+</AnchorPane>

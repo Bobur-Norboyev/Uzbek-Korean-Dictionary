@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.input.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="678.0" style="-fx-background-color: yellow;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uzbek.korean.dictionary.asosiyController">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="22.0" prefWidth="595.0" style="-fx-background-color: yellow;">
+        <menus>
+          <Menu mnemonicParsing="false" text="Yordam">
+            <items>
+              <MenuItem fx:id="alpha" mnemonicParsing="false" onAction="#alifbosi" text="Koreys alifbosi">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="A" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+                  <MenuItem fx:id="mad" mnemonicParsing="false" onAction="#madaniyati" text="Koreys madaniyati">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="I" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Dastur haqida">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#about_f" text="Ma'lumot">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="O" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Chiqish">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#d_chiq" text="Dasturdan chiqish">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="W" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TabPane layoutX="6.0" layoutY="27.0" prefHeight="463.0" prefWidth="666.0" style="-fx-background-color: yellow;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab style="-fx-pref-width: 330; -fx-pref-height: 40; -fx-font-size: 18; -fx-background-color: magenta; -fx-background-radius: 3;" text="          O'zbek -&gt; Koreys">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 20; -fx-background-color: yellow;">
+                     <children>
+                        <TextField fx:id="uzWord" alignment="CENTER" layoutX="11.0" layoutY="14.0" prefHeight="41.0" prefWidth="645.0" promptText="So'zni kiriting" style="-fx-background-radius: 20; -fx-background-color: lightgreen; -fx-border-radius: 10; -fx-font-size: 20;" />
+                        <ScrollPane layoutX="11.0" layoutY="55.0" prefHeight="359.0" prefWidth="646.0" style="-fx-background-radius: 0; -fx-background-color: yellow;">
+                           <content>
+                              <ListView fx:id="uzList" onMousePressed="#uzTanlash" prefHeight="357.0" prefWidth="643.0" style="-fx-background-radius: 0; -fx-font-size: 20px;" />
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </Pane>
+               </content>
+            </Tab>
+          <Tab style="-fx-background-color: magenta; -fx-pref-width: 300; -fx-pref-height: 40; -fx-font-size: 18; -fx-background-radius: 3;" text="          Koreys -&gt; O'zbek">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: yellow; -fx-background-radius: 20;">
+                     <children>
+                        <TextField fx:id="korWord" alignment="CENTER" layoutX="11.0" layoutY="14.0" prefHeight="41.0" prefWidth="646.0" promptText="So'zni kiriting" style="-fx-background-radius: 20; -fx-background-color: lightgreen; -fx-font-size: 20;" />
+                        <ScrollPane layoutX="11.0" layoutY="55.0" prefHeight="359.0" prefWidth="646.0" style="-fx-background-radius: 0; -fx-background-color: yellow;">
+                           <content>
+                              <ListView fx:id="korList" onMousePressed="#korTanlash" prefHeight="357.0" prefWidth="644.0" style="-fx-font-size: 20px;" />
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </Pane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Button fx:id="chiqish" alignment="CENTER" cancelButton="true" layoutX="640.0" layoutY="-4.0" mnemonicParsing="false" onAction="#d_chiq" prefHeight="31.0" prefWidth="38.0" style="-fx-background-color: red;" text="X" textFill="#141412" />
+   </children>
+   <opaqueInsets>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </opaqueInsets>
+</Pane>
